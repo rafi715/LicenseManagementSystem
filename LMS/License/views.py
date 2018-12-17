@@ -1,3 +1,8 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def test(request):
+    context = {
+        'name': '',
+    }
+    return render(request, 'register.html', context)
